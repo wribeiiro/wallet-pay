@@ -23,10 +23,3 @@ jobs:
 
       - name: Execute tests (Unit) via PHPUnit 🧪
         run: ./vendor/bin/phpunit --colors --testdox
-  php-cs-fixer:
-    name: PHP-CS-Fixer
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: PHP-CS-Fixer
-      uses: docker://oskarstark/php-cs-fixer-ga
